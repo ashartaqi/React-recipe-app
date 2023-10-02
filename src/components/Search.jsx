@@ -36,14 +36,22 @@ const Search = () => {
     transform: "translate(100%,-50%)",
     color: "white",
   };
+  const header = {
+    marginLeft:'40%',
+    marginRight:'40%',
+    marginTop:'50px'
+  };
 
   return (
+    <>
+    <h1 style={header}>Spoono</h1>
     <form style={formStyle} onSubmit={submitHandler} >
       <div style={field}>
         <FaSearch style={image}></FaSearch>
         <input style={inputStyle} type="text" value={input} onChange={(e)=> setInput(e.target.value)} />
       </div>
     </form>
+    </>
   );
 };
 
