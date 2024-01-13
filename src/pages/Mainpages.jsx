@@ -7,12 +7,14 @@ import Recipe from "./Recipe";
 
 const Mainpages = () => {
   return (
+
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/cusine/:type" element={<Cuisine />} />
       <Route path="/searched/:item" element={<Searched />} />
       <Route path="/recipe/:id" element={<Recipe />} />
     </Routes>
+    
   );
 };
 
